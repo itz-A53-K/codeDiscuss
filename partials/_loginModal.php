@@ -1,0 +1,31 @@
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <!--class="position-relative" style="display:inline-block;left:76vw; top:35px;"-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Login to codeDiscuss</h5>
+            </div>
+            <div class="modal-body">
+                <form action="/productivity/codeDiscuss/partials/_loginFunctional.php" method="post">
+                    <div class="mb-3">
+                        <label for="login_userName" class="form-label">User Name :</label>
+                        <input type="text" class="form-control border-dark" id="login_userName" name="login_userName"
+                            maxlength="15">
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="login_password" class="form-label">Password :</label>
+                        <input type="password" class="form-control border-dark" id="login_password"
+                            name="login_password">
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
